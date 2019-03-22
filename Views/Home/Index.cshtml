@@ -1,0 +1,13 @@
+﻿@model IEnumerable<GHub.Models.Gig>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<ul>
+    @foreach (var gig in Model)
+    {
+        <li>@gig.DateTime - @gig.Artist.UserName</li>
+    }
+
+
+</ul>
